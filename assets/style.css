@@ -1,0 +1,48 @@
+/* RESET MAIN STYLING */
+
+*,
+*:before,
+*:after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* border: 5px dotted red; */
+   font-family: 'Protest Riot', sans-serif;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+   min-height: 100vh;
+   background: hsla(198, 15%, 64%, 1);
+
+   background: radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+
+   background: -moz-radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+
+   background: -webkit-radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95A8B0", endColorstr="#EEF2F3", GradientType=1 );
+   padding: 10px;
+}
+
+/* To-Do CONTAINER */
+
+.todo-container {
+   border: 2px solid black;
+   border-radius: 10px;
+   max-width: 540px;
+   background: #fff;
+   margin: 200px auto 20px;
+   padding: 50px 20px 80px;
+}
+
+.todo-container header, form {
+   display: flex;
+   justify-content: center;
+}
+
+.todo-button i {
+   height: 100px;
+   width: 100px;
+}
