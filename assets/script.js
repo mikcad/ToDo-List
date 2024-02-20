@@ -49,11 +49,20 @@ const addTask = (e) => {
 // fucntion to delete a task from the list
 const deleteTask = (e) => {
   const item = e.target;
-  const todoTask = item.closest('.task-container');
-  console.log(todoTask);
+  const todoContainer = item.closest('.task-container');
+  console.log(todoContainer);
 
-  item.classList.contains("delete-button") && todoTask.remove();
+  // logic to remove a task
+  item.classList.contains('delete-button') && todoContainer.remove();
+
+  // logic to complete a task
+  const todoTask = todoContainer.querySelector('.todo-task');
+  console.log(todoTask);
+  item.classList.contains('complete-button') &&
+    todoTask.classList.toggle('completed');
 };
+
+
 
 // --------------Event Listeners--------------
 
