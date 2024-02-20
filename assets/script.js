@@ -10,6 +10,7 @@ const todoList = document.querySelector('.todo-list');
 
 // --------------Functions--------------
 
+// fucntion to add tasks to the list
 const addTask = (e) => {
   e.preventDefault();
 
@@ -21,6 +22,7 @@ const addTask = (e) => {
   const todoTask = document.createElement('li');
   todoTask.innerHTML = todoInput.value;
   todoTask.classList.add('todo-task');
+  todoInput.value = '';
 
   // create div element for buttons
   const btnContainer = document.createElement('div');
@@ -44,6 +46,16 @@ const addTask = (e) => {
   todoList.appendChild(taskContainer);
 };
 
+// fucntion to delete a task from the list
+const deleteTask = (e) => {
+  const item = e.target;
+  const todoTask = item.closest('.task-container');
+  console.log(todoTask);
+
+  item.classList.contains("delete-button") && todoTask.remove();
+};
+
 // --------------Event Listeners--------------
 
 todoBtn.addEventListener('click', addTask);
+todoList.addEventListener('click', deleteTask);
