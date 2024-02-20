@@ -1,13 +1,21 @@
 /* RESET MAIN STYLING */
 
-*,
-*:before,
-*:after {
+*{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    /* border: 5px dotted red; */
    font-family: 'Protest Riot', sans-serif;
+}
+
+/* GLOBAL STYLES */
+
+/* :root {
+   
+} */
+
+button:hover {
+   cursor: pointer;
 }
 
 /* MAIN CONTAINER */
@@ -31,9 +39,9 @@
 .todo-container {
    border: 2px solid black;
    border-radius: 10px;
-   max-width: 540px;
+   max-width: 700px;
    background: #fff;
-   margin: 200px auto 20px;
+   margin: 20vh auto 20px;
    padding: 50px 20px 80px;
 }
 
@@ -42,7 +50,68 @@
    justify-content: center;
 }
 
-.todo-button i {
-   height: 100px;
-   width: 100px;
+.todo-container header {
+   margin-bottom: 5vh;
+}
+
+/* FILTER To-Do */
+
+.filter-todo {
+   height: 100%;
+   text-align: center;
+   border: none;
+   font-size: 1.2rem;
+   margin-left: 5px;
+}
+
+/* INPUT CONTAINER */
+
+form button,
+form input {
+   padding: 0.5rem;
+   border: none;
+   font-size: 1.25rem;
+   background-color: white;
+}
+
+.todo-button {
+   color: blue;
+   background: white;
+   transition: all 0.3s ease;
+}
+
+.todo-button:hover {
+   color: white;
+   background: blue;
+}
+
+/* LIST CONTAINER */
+
+.list-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.todo-list {
+   min-width: 30%;
+   list-style: none;
+}
+
+/* To-Do TASK CONTAINER */
+
+.task-container {
+   margin: 0.5rem;
+   font-size: 1.2rem;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+/* .todo-task {
+   max-width: 80%;
+} */
+
+.button-container {
+   display: flex;
 }

@@ -24,13 +24,35 @@
          <form>
             <input type="text" class="todo-input" placeholder="Add a new task">
             <button class="todo-button" type="submit">
-               <i class="fas fa-plus-square"></i>
+               <i class="fa-solid fa-circle-plus"></i>
             </button>
+            <div class="select">
+               <select name="todos" class="filter-todo">
+                 <option value="all">All</option>
+                 <option value="completed">Completed</option>
+                 <option value="uncompleted">Uncompleted</option>
+               </select>
+             </div>
          </form>
          <!-- To-Do list container -->
          <div class="list-container">
-            <ul id="todo-list">
+            <ul class="todo-list">
                <!-- Tasks will be added dynamically here -->
+               <div class="task-container">
+                  <li class="todo-task">Task 1</li>
+                  <div class="button-container">
+                     <button class="close-button">close</button>
+                     <button class="complete-button">complete</button>
+                  </div>
+               </div>
+               <div class="task-container">
+                  <li class="todo-task">Task 2</li>
+                  <!-- Container for complete and delete buttons -->
+                  <div class="button-container">
+                     <button>close</button>
+                     <button>complete</button>
+                  </div>
+               </div>
             </ul>
          </div>
          
