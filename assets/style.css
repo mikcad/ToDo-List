@@ -38,11 +38,14 @@ button:hover {
 
 .todo-container {
    border: 2px solid black;
-   border-radius: 10px;
+   /* border-radius: 10px; */
    max-width: 700px;
-   background: #fff;
+   /* background: #fff; */
    margin: 20vh auto 20px;
    padding: 50px 20px 80px;
+   background: rgba( 69, 202, 163, 0.05 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   border-radius: 10px;
 }
 
 .todo-container header, form {
@@ -69,20 +72,24 @@ button:hover {
 form button,
 form input {
    padding: 0.5rem;
-   border: none;
+   border: 0.5px solid grey;
    font-size: 1.25rem;
    background-color: white;
 }
 
-.todo-button {
+.todo-button, .clear-all {
    color: blue;
    background: white;
    transition: all 0.3s ease;
 }
 
-.todo-button:hover {
+.todo-button:hover, .clear-all:hover {
    color: white;
    background: blue;
+}
+
+form input:focus {
+   outline: none;
 }
 
 /* LIST CONTAINER */
@@ -106,6 +113,7 @@ form input {
    width: 100%;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 /* .todo-task {
@@ -114,6 +122,7 @@ form input {
 
 .button-container {
    display: flex;
+   align-items: center;
 }
 
 .completed {
