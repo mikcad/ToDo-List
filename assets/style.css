@@ -1,11 +1,11 @@
 /* RESET MAIN STYLING */
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   /* border: 5px dotted red; */
-   font-family: 'Protest Riot', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 5px dotted red; */
+  font-family: 'Protest Riot', sans-serif;
 }
 
 /* GLOBAL STYLES */
@@ -15,105 +15,120 @@
 } */
 
 button:hover {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 /* MAIN CONTAINER */
 
 .main-container {
-   min-height: 100vh;
-   background: hsla(198, 15%, 64%, 1);
+  min-height: 100vh;
+  background: hsla(198, 15%, 64%, 1);
 
-   background: radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+  background: radial-gradient(
+    circle,
+    hsla(198, 15%, 64%, 1) 30%,
+    hsla(192, 17%, 94%, 1) 100%
+  );
 
-   background: -moz-radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+  background: -moz-radial-gradient(
+    circle,
+    hsla(198, 15%, 64%, 1) 30%,
+    hsla(192, 17%, 94%, 1) 100%
+  );
 
-   background: -webkit-radial-gradient(circle, hsla(198, 15%, 64%, 1) 30%, hsla(192, 17%, 94%, 1) 100%);
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(198, 15%, 64%, 1) 30%,
+    hsla(192, 17%, 94%, 1) 100%
+  );
 
-   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95A8B0", endColorstr="#EEF2F3", GradientType=1 );
-   padding: 10px;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95A8B0", endColorstr="#EEF2F3", GradientType=1 );
+  padding: 10px;
 }
 
 /* To-Do CONTAINER */
 
 .todo-container {
-   border: 2px solid black;
-   /* border-radius: 10px; */
-   max-width: 700px;
-   /* background: #fff; */
-   margin: 20vh auto 20px;
-   padding: 50px 20px 80px;
-   background: rgba( 69, 202, 163, 0.05 );
-   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-   border-radius: 10px;
+  border: 2px solid black;
+  /* border-radius: 10px; */
+  max-width: 700px;
+  /* background: #fff; */
+  margin: 20vh auto 20px;
+  padding: 50px 20px 80px;
+  background: rgba(69, 202, 163, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
 }
 
-.todo-container header, form {
-   display: flex;
-   justify-content: center;
+.todo-container header,
+form {
+  display: flex;
+  justify-content: center;
 }
 
 .todo-container header {
-   margin-bottom: 5vh;
+  margin-bottom: 5vh;
 }
 
 /* FILTER To-Do */
 
 .filter-todo {
-   height: 100%;
-   text-align: center;
-   border: none;
-   font-size: 1.2rem;
-   margin-left: 5px;
+  height: 100%;
+  text-align: center;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
 
 /* INPUT CONTAINER */
 
 form button,
 form input {
-   padding: 0.5rem;
-   border: 0.5px solid grey;
-   font-size: 1.25rem;
-   background-color: white;
+  padding: 0.5rem;
+  border: 0.5px solid grey;
+  font-size: 1.25rem;
+  background-color: white;
 }
 
-.todo-button, .clear-all {
-   color: blue;
-   background: white;
-   transition: all 0.3s ease;
+.todo-button,
+.clear-all {
+  color: blue;
+  background: white;
+  transition: all 0.3s ease;
 }
 
-.todo-button:hover, .clear-all:hover {
-   color: white;
-   background: blue;
+.todo-button:hover,
+.clear-all:hover {
+  color: white;
+  background: blue;
 }
 
 form input:focus {
-   outline: none;
+  outline: none;
 }
 
 /* LIST CONTAINER */
 
 .list-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-list {
-   min-width: 30%;
-   list-style: none;
+  min-width: 30%;
+  list-style: none;
 }
 
 /* To-Do TASK CONTAINER */
 
 .task-container {
-   margin: 0.5rem;
-   font-size: 1.2rem;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* .todo-task {
@@ -121,11 +136,18 @@ form input:focus {
 } */
 
 .button-container {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .completed {
-   text-decoration: line-through grey;
-   color: grey;
+  text-decoration: line-through grey;
+  color: grey;
+}
+
+@media (max-width: 425px) {
+  .todo-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
