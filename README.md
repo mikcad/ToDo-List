@@ -1,4 +1,4 @@
-# To-Do List
+# To-Do List App
 
 ## Description
 
@@ -18,6 +18,8 @@ This Todo List App is a simple tool designed to help users organize their tasks 
 - [x] Mark tasks as complete
 - [x] Responsive design
 - [x] Locally stored tasks
+
+### TODO:
 - [ ] Filter tasks by status (completed/active)
 
 ## Tehcnologies Used
